@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Ninja</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.image').click(function(){
+                $(this).hide();
+            })
+            $('#button').click(function(){
+                $('.image').show();
+            })
+        })
+    </script>
+</head>
+<body>
+    <h1>jQuery - Assignment 1</h1>
+    <img class="image" src="animal.jpg" alt="Horse">
+    <img class="image" src="animal.jpg" alt="Horse">
+    <img class="image" src="animal.jpg" alt="Horse">
+    <img class="image" src="animal.jpg" alt="Horse">
+    <img class="image" src="animal.jpg" alt="Horse">
+    <img class="image" src="animal.jpg" alt="Horse">
+    <img class="image" src="animal.jpg" alt="Horse">
+    <img class="image" src="animal.jpg" alt="Horse">
+    <button id="button" type="text">Restore</button>
+</body>
+</html>
